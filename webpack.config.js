@@ -63,7 +63,6 @@ var faviconsWebpackPlugin = new FaviconsWebpackPlugin({
 
 var config = {
   entry: {
-    category: './saleor/static/js/category.js',
     dashboard: './saleor/static/dashboard/js/dashboard.js',
     storefront: './saleor/static/js/storefront.js',
     vendor: [
