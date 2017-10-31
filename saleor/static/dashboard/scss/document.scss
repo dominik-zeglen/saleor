@@ -1,3 +1,5 @@
+$font-color: rgba(0, 0, 0, 0.87);
+
 @font-face {
   font-family: Roboto;
   src: local(Roboto Thin), url(/static/assets/Roboto-Thin.woff2) format("woff2"), url(/static/assets/Roboto-Thin.woff) format("woff");
@@ -45,11 +47,20 @@ html {
   line-height: 1.5;
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.87);
+  color: $font-color;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+  &.phone-number {
+    display: block;
+    margin-top: .5rem;
+  }
 }
 
 details, header {
