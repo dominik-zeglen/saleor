@@ -80,6 +80,7 @@
     }
   },
   "scripts": {
+    "heroku-prebuild": "npm i -dev",
     "build-assets": "node ./node_modules/webpack/bin/webpack.js -p",
     "heroku-postbuild": "npm run build-assets",
     "start": "UV_THREADPOOL_SIZE=8 node ./node_modules/webpack/bin/webpack.js -d --watch"
